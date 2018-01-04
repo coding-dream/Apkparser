@@ -50,7 +50,7 @@ public class ApkParserUtil {
 		return "";
 	}
 
-	private static ApkMeta getApkMetaInfo(ApkFile apkFile) {
+	public static ApkMeta getApkMetaInfo(ApkFile apkFile) {
 		try {
 			apkFile.setPreferredLocale(Locale.SIMPLIFIED_CHINESE);
 			ApkMeta apkMeta = apkFile.getApkMeta();

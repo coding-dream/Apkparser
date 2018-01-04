@@ -92,7 +92,7 @@ public class FileChooserUtil {
             fileChooser.setInitialDirectory(justVisitedDir);
         }
 
-        fileChooser.getExtensionFilters().addAll(new ExtensionFilter[]{new ExtensionFilter("Image Files", new String[]{"*.png", "*.jpg", "*.jpeg", "*.gif", "*.bmp"}), new ExtensionFilter("JPG", new String[]{"*.jpg"}), new ExtensionFilter("JPEG", new String[]{"*.jpeg"}), new ExtensionFilter("BMP", new String[]{"*.bmp"}), new ExtensionFilter("PNG", new String[]{"*.png"}), new ExtensionFilter("GIF", new String[]{"*.gif"}),new ExtensionFilter("Apk", new String[]{"*.apk"})});
+        fileChooser.getExtensionFilters().addAll(new ExtensionFilter[]{new ExtensionFilter("ApkÎÄ¼þÑ¡Ôñ", new String[]{"*.apk"}),new ExtensionFilter("Image Files", new String[]{"*.png", "*.jpg", "*.jpeg", "*.gif", "*.bmp"}), new ExtensionFilter("JPG", new String[]{"*.jpg"}), new ExtensionFilter("JPEG", new String[]{"*.jpeg"}), new ExtensionFilter("BMP", new String[]{"*.bmp"}), new ExtensionFilter("PNG", new String[]{"*.png"}), new ExtensionFilter("GIF", new String[]{"*.gif"})});
         File file = fileChooser.showOpenDialog(null);
         if(file != null){
         	justVisitedDir = file.getParentFile();
