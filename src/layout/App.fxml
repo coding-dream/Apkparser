@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
-	
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppController">
-	<!-- TODO Add Nodes -->
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="application.AppController">
+   <center>
+      <AnchorPane prefHeight="564.0" prefWidth="740.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button defaultButton="true" layoutX="186.0" layoutY="136.0" mnemonicParsing="false" text="选择" />
+            <Label layoutX="294.0" layoutY="30.0" prefHeight="31.0" prefWidth="146.0" text="Apk开源库分析工具" textAlignment="JUSTIFY" textFill="#ff1a25">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="209.0" text="网络文件：" />
+            <Label layoutX="96.0" layoutY="140.0" text="本地文件：" />
+            <TextField layoutX="186.0" layoutY="205.0" prefHeight="23.0" prefWidth="310.0" />
+            <TextArea layoutX="48.0" layoutY="282.0" prefHeight="272.0" prefWidth="638.0" />
+         </children>
+      </AnchorPane>
+   </center>
 </BorderPane>

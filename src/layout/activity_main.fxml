@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.less.apkparser.controller.AppController">
+   <center>
+      <AnchorPane prefHeight="564.0" prefWidth="740.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_open" defaultButton="true" layoutX="186.0" layoutY="136.0" mnemonicParsing="false" onAction="#open_file" text="选择" />
+            <Button fx:id="btn_down" defaultButton="true" layoutX="186.0" layoutY="205.0" mnemonicParsing="false" onAction="#down_file" text="下载" />
+            <Button fx:id="btn_start" cancelButton="true" layoutX="338.0" layoutY="244.0" mnemonicParsing="false" onAction="#begin_parse" text="开始分析" />
+            <Label layoutX="294.0" layoutY="30.0" prefHeight="31.0" prefWidth="146.0" text="Apk开源库分析工具" textAlignment="JUSTIFY" textFill="#ff1a25">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="209.0" text="网络文件：" />
+            <Label layoutX="96.0" layoutY="140.0" text="本地文件：" />
+            <TextField fx:id="tv_local" layoutX="245.0" layoutY="136.0" prefHeight="23.0" prefWidth="313.0" />
+            <TextField fx:id="tv_net" layoutX="245.0" layoutY="205.0" prefHeight="23.0" prefWidth="313.0" />
+            <TextArea fx:id="textarea_info" layoutX="48.0" layoutY="282.0" prefHeight="272.0" prefWidth="638.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
