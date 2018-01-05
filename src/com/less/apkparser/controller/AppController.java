@@ -2,10 +2,8 @@ package com.less.apkparser.controller;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.Set;
 
 import com.less.apkparser.util.ApkParserUtil;
 import com.less.apkparser.util.FileChooserUtil;
