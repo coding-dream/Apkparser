@@ -18,24 +18,37 @@ public class ApkParserUtil {
 		ApkMeta apkMeta = getApkMetaInfo(apkFile);
 		System.out.println("====> " + apkMeta);
 		getApkXml(apkFile);
-		Set<String> packageSets = getDexPackageNames(apkFile);
-		for(String pName : packageSets){
-			System.out.println(pName);
-		}
+		String result = getDexPackageNames(apkFile);
+		System.out.println(result);
 	}
 
-	public static Set<String> getDexPackageNames(ApkFile apkFile){
+	public static String getDexPackageNames(ApkFile apkFile){
 		Set<String> packageSets = new HashSet<>();
 		try {
 		    DexClass[] classes = apkFile.getDexClasses();
 		    for (DexClass dexClass : classes) {
-		    	packageSets.add(dexClass.getPackageName());
+		    	String pName = splitPackageName(dexClass.getPackageName());
+		    	packageSets.add(pName);
 		    }
-		    return packageSets;
+		    StringBuffer stringBuffer = new StringBuffer();
+		    for(String pName : packageSets){
+		    	stringBuffer.append(pName + "\r\n");
+		    }
+		    return stringBuffer.toString();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return null;
+		return "";
+	}
+
+	private static String splitPackageName(String packageName) {
+		String pName = "";
+		try {
+			String [] pArrays = packageName.split("\\.");
+			pName = pArrays[0] + "." + pArrays[1] + "." + pArrays[2];
+			return pName;
+		} catch (Exception ignore) {}
+		return pName;
 	}
 
 	private static String getApkXml(ApkFile apkFile) {

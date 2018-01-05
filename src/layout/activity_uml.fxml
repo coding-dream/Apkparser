@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="ap_login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="47.0" layoutY="8.0" prefHeight="56.0" prefWidth="562.0" text="PlantUML工具(文件存储在 F:/uml.png)">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.2" color="#792323">
+               <input>
+                  <Reflection />
+               </input>
+            </InnerShadow>
+         </effect>
+      </Label>
+      <ImageView fx:id="imageView" fitHeight="394.0" fitWidth="690.0" layoutX="53.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

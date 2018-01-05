@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="src/libs/commons-io-2.2.jar"/>
 	<classpathentry kind="lib" path="src/libs/downloader-java-1.0.jar"/>
 	<classpathentry kind="lib" path="src/libs/sqlite-jdbc-3.20.1.jar"/>
+	<classpathentry kind="lib" path="src/libs/plantuml.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
