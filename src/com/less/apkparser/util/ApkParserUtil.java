@@ -51,7 +51,7 @@ public class ApkParserUtil {
 		return pName;
 	}
 
-	private static String getApkXml(ApkFile apkFile) {
+	public static String getApkXml(ApkFile apkFile) {
 		try {
 			String manifestXml = apkFile.getManifestXml();
 		    // String xml = apkFile.transBinaryXml("res/menu/main.xml");

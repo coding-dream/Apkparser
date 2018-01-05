@@ -134,7 +134,16 @@ public class AppController implements Initializable {
 			ApkFile apkFile = new ApkFile(filePath);
 			ApkMeta apkMeta = ApkParserUtil.getApkMetaInfo(apkFile);
 			String result = ApkParserUtil.getDexPackageNames(apkFile);
-			textarea_info.setText(result);
+			String manifest = ApkParserUtil.getApkXml(apkFile);
+
+			StringBuffer buffer = new StringBuffer();
+			buffer.append("\r\n================================\r\n");
+			buffer.append(apkMeta.toString());
+			buffer.append("\r\n================================\r\n");
+			buffer.append(manifest);
+			buffer.append("\r\n================================\r\n");
+			buffer.append(result);
+			textarea_info.setText(buffer.toString());
 		} else {
 			lb_message.setText("输入框不能为空");
 		}
