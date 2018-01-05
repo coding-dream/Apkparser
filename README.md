@@ -22,10 +22,10 @@ JavaFX实在太容易了，相对Android和Swing而言，Api简洁好用，缺�
 项目代码就无需研究了，UI只用了一个类，没什么可看的，不过JavaFX值得一看，如果你懂Android，仅需一天即可掌握基础。
 
 ## 项目截图
-![](screenshots/1.png)
-![](screenshots/2.png)
-![](screenshots/3.png)
-![](screenshots/4.png)
+![](screenshorts/1.png)
+![](screenshorts/2.png)
+![](screenshorts/3.png)
+![](screenshorts/4.png)
 
 ## License
 None
